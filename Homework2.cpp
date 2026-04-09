@@ -71,6 +71,5 @@ int main() {
     }
     outfile.close();
 
-    cout << "計算が完了しました。output.csv を確認してください。" << endl;
     return 0;
 }

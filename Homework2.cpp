@@ -28,7 +28,7 @@ vector<vector<double>> readCSV(string filename) {
 vector<double> solveLinearEquation(vector<vector<double>> A, vector<double> b) {
     int n = A.size();
 
-    // 前進消去
+    // 前進
     for (int i = 0; i < n; i++) {
         double pivot = A[i][i];
         for (int j = i + 1; j < n; j++) {
@@ -40,7 +40,7 @@ vector<double> solveLinearEquation(vector<vector<double>> A, vector<double> b) {
         }
     }
 
-    // 後退代入
+    // 後退
     vector<double> x(n);
     for (int i = n - 1; i >= 0; i--) {
         double sum = 0;
@@ -54,8 +54,8 @@ vector<double> solveLinearEquation(vector<vector<double>> A, vector<double> b) {
 
 int main() {
     // 1. データの読み込み
-    auto matrix = readCSV("/workspace/B4_task_2026/input/matrix1.csv");
-    auto vector_data = readCSV("/workspace/B4_task_2026/input/vector1.csv");
+    auto matrix = readCSV("/home/keigo/projects/my-first-repo/B4_task_2026/input/matrix1.csv");
+    auto vector_data = readCSV("/home/keigo/projects/my-first-repo/B4_task_2026/input/vector1.csv");
     
     // vector1.csv が縦ベクトル (1列) の場合を想定して変換
     vector<double> b;

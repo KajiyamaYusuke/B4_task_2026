@@ -84,39 +84,3 @@ int main() {
     std::cout << "\nAll P2 systems processed successfully!" << std::endl;
     return 0;
 }
-
-   /*std::string matrixPath = "input/matrix1.csv";
-    std::string vectorPath = "input/vector1.csv";
-    
-    std::vector<std::vector<double>> A = readCSV(matrixPath);
-    std::vector<std::vector<double>> b_raw = readCSV(vectorPath);
-     if (A.empty() || b_raw.empty()) {
-        return 1;
-     }
-
-     std::vector<double> b;
-     for(auto& row : b_raw) b.push_back(row[0]);
-
-     std::cout << "Successfully loaded files!" << std::endl;
-     std::cout << "Matrix A size:" << A.size() << "x" << A[0].size() << std::endl;
-     std::cout << "Vector b size:" << b.size() << std::endl;
-     std::cout <<"------------------------------" << std::endl;
-     std::cout << "First 3x3 of Matrix A:" <<std::endl;
-     for(int i=0; i<3; ++i) {
-        for(int j=0; j<3; ++j) {
-            std::cout << std::setw(10) << A[i][j] << " ";
-        }
-        std::cout << "..." << std::endl;
-     }
-
-     std::cout << "\nFirst 3 elements of Vector b:" << std::endl;
-     for(int i=0; i<3; ++i) {
-        std::cout << "b[" << i << "]: " << b[i] << std::endl;
-     }
-     
-     std::vector<double> x1 = solveLinearSystem(A,b);
-     saveCSV("P2output1.csv", x1);
-     std::cout << "System solved and results saved to P2output1.csv" << std::endl;
-    
-     return 0;*/
-

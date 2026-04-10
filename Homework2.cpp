@@ -54,8 +54,8 @@ vector<double> solveLinearEquation(vector<vector<double>> A, vector<double> b) {
 
 int main() {
     // 1. データの読み込み
-    auto matrix = readCSV("/home/keigo/projects/my-first-repo/B4_task_2026/input/matrix1.csv");
-    auto vector_data = readCSV("/home/keigo/projects/my-first-repo/B4_task_2026/input/vector1.csv");
+    auto matrix = readCSV("/home/keigo/projects/B4_task_2026/input/matrix1.csv");
+    auto vector_data = readCSV("/home/keigo/projects/B4_task_2026/input/vector1.csv");
     
     // vector1.csv が縦ベクトル (1列) の場合を想定して変換
     vector<double> b;

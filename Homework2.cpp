@@ -28,7 +28,7 @@ vector<vector<double>> readCSV(string filename) {
 vector<double> solveLinearEquation(vector<vector<double>> A, vector<double> b) {
     int n = A.size();
 
-    // 前進消去
+    // 前進
     for (int i = 0; i < n; i++) {
         double pivot = A[i][i];
         for (int j = i + 1; j < n; j++) {
@@ -40,7 +40,7 @@ vector<double> solveLinearEquation(vector<vector<double>> A, vector<double> b) {
         }
     }
 
-    // 後退代入
+    // 後退
     vector<double> x(n);
     for (int i = n - 1; i >= 0; i--) {
         double sum = 0;
@@ -71,6 +71,5 @@ int main() {
     }
     outfile.close();
 
-    cout << "計算が完了しました。output.csv を確認してください。" << endl;
     return 0;
 }

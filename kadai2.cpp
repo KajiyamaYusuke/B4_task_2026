@@ -12,7 +12,7 @@ void solveAndSave(string matlixfile, string vectorFile, string outputFile){
      vector<vector<double>> A(N,vector<double>(N));
      vector<double> b(N);
 
-     ifstream fileA(matlixFile), fileB(vectorFile);
+     ifstream fileA(matlixfile), fileB(vectorFile);
 
      char comma;
 

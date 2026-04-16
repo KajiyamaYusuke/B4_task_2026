@@ -61,3 +61,14 @@ void SolveAndSave(string matlixfile, string vectorFile, string outputFile){
 
     cout << "処理完了: " << outputFile << " に結果を出力しました。" << endl;
 }
+
+int main() {
+    cout << "課題2の計算を開始します..." << endl;
+
+    solveAndSave("matrix1.csv", "vector1.csv", "output1.csv");
+    
+    solveAndSave("matrix2.csv", "vector2.csv", "output2.csv");
+
+    cout << "すべての処理が完了しました。" << endl;
+    return 0; 
+}

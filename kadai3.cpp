@@ -22,6 +22,7 @@ MatrixXd readMatrix(const string& filename) {
 
         while (getline(ss, value, ',') && j < N) {
             mat(i, j) = stod(value);
+           // cout << mat(i,j) << endl;
             j++;
         }
         i++;
@@ -66,12 +67,12 @@ VectorXd solveSystem(const string& matrixFile, const string& vectorFile) {
 int main() {
 
     // ---- 1つ目のデータ ----
-    VectorXd x1 = solveSystem("matrix1.csv", "vector1.csv");
-    writeVector("result1.csv", x1);
+    VectorXd x1 = solveSystem("input/matrix1.csv", "input/vector1.csv");
+    writeVector("output/result1.csv", x1);
 
     // ---- 2つ目のデータ ----
-    VectorXd x2 = solveSystem("matrix2.csv", "vector2.csv");
-    writeVector("result2.csv", x2);
+    VectorXd x2 = solveSystem("input/matrix2.csv", "input/vector2.csv");
+    writeVector("output/result2.csv", x2);
 
     cout << "計算完了！ result1.csv, result2.csv を出力しました。" << endl;
 

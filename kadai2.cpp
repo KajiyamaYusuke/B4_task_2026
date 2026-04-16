@@ -6,13 +6,13 @@
 
 using namespace std;
 
-void SolveAndSave(string matlixfile, string vectorFile, string outputFile){
+void solveAndSave(string matlixfile, string vectorFile, string outputFile){
      int N = 100;
 
      vector<vector<double>> A(N,vector<double>(N));
      vector<double> b(N);
 
-     ifstream fileA(matrixFile), fileB(vectorFile);
+     ifstream fileA(matlixFile), fileB(vectorFile);
 
      char comma;
 

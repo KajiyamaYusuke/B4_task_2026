@@ -1,0 +1,5 @@
+/home/n_ryota1125/B4_task_2026/build/CMakeFiles/hello.dir
+/home/n_ryota1125/B4_task_2026/build/CMakeFiles/kadai2.dir
+/home/n_ryota1125/B4_task_2026/build/CMakeFiles/kadai3.dir
+/home/n_ryota1125/B4_task_2026/build/CMakeFiles/edit_cache.dir
+/home/n_ryota1125/B4_task_2026/build/CMakeFiles/rebuild_cache.dir

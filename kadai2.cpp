@@ -135,11 +135,11 @@ int main(void) {
     double b[N];
     double x[N];
 
-    if (!read_matrix_csv("matrix1.csv", A)) {
+    if (!read_matrix_csv("input/matrix1.csv", A)) {
         return 1;
     }
 
-    if (!read_vector_csv("vector1.csv", b)) {
+    if (!read_vector_csv("input/vector1.csv", b)) {
         return 1;
     }
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/kadai3.dir/kadai3.cpp.o -o kadai3  -lm 
